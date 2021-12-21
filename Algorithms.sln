@@ -159,7 +159,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avira", "Companies\Avira\Av
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contest", "Leetcode\Contest\Contest.csproj", "{0946C032-EBC6-4AF4-BEB8-235A64FFEBEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MS1", "Companies\MS1\MS1.csproj", "{2C932C31-9E47-46ED-8527-877CFA135FA7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MS1", "Companies\MS1\MS1.csproj", "{2C932C31-9E47-46ED-8527-877CFA135FA7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

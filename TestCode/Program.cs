@@ -35,38 +35,76 @@ namespace TestCode
 
 
         static void Main(string[] args)
-        {
-            Test1.Main2(args);
-            //Test2.Main2(args);
-            //Test3.Main2(args);
+		{
+			StringReverse();
 
-            ////ArrayList vs array
-            //string[] employee_1 = { "Employee1" };
-            //string[] employee_2 = { "Employee2" };
-            //ArrayList main_array = new ArrayList();
-            //main_array.Add(employee_1);
-            //main_array.Add(employee_2);
-            //for (int i = 0; i < 2; i++)
-            //{
-            //    Console.WriteLine(string.Join(", ", main_array[i] as string[]));
-            //}
+			//Test1.Main2(args);
+			//Test2.Main2(args);
+			//Test3.Main2(args);
 
-            //var input = "abcdefghijklmnopqrstuvwxyz";
-            ////Console.WriteLine("abcdefghijklmnopqrstuvwxyz".All(input.ToLower().Contains));
-            //Console.WriteLine("abcdefghijklmnopqrstuvwxyz".All(input.Contains));
-            //Console.WriteLine("abcdefghijklmnopqrstuvwxyz".Contains(input));
-            //Console.WriteLine("abcdefghijklmnopqrstuvwxyz".IndexOfAny(new char[] { 's' }));
+			////ArrayList vs array
+			//string[] employee_1 = { "Employee1" };
+			//string[] employee_2 = { "Employee2" };
+			//ArrayList main_array = new ArrayList();
+			//main_array.Add(employee_1);
+			//main_array.Add(employee_2);
+			//for (int i = 0; i < 2; i++)
+			//{
+			//    Console.WriteLine(string.Join(", ", main_array[i] as string[]));
+			//}
 
-            TestObject testObject = new TestObject();
-            var request = new Models.Payment123GMORequest();
-            request.bank_code = "100";
-            request.bank_mobile_number = "890829034";
-            request.bank_email_address = "rousonur@2c2p.com";
-            request.bank_payer_name = "rony";
-            testObject.TestMethod(request);
-            Console.ReadKey();
-        }
-    }
+			//var input = "abcdefghijklmnopqrstuvwxyz";
+			////Console.WriteLine("abcdefghijklmnopqrstuvwxyz".All(input.ToLower().Contains));
+			//Console.WriteLine("abcdefghijklmnopqrstuvwxyz".All(input.Contains));
+			//Console.WriteLine("abcdefghijklmnopqrstuvwxyz".Contains(input));
+			//Console.WriteLine("abcdefghijklmnopqrstuvwxyz".IndexOfAny(new char[] { 's' }));
+
+			//TestObject testObject = new TestObject();
+			//var request = new Models.Payment123GMORequest();
+			//request.bank_code = "100";
+			//request.bank_mobile_number = "890829034";
+			//request.bank_email_address = "rousonur@2c2p.com";
+			//request.bank_payer_name = "rony";
+			//testObject.TestMethod(request);
+			Console.ReadKey();
+		}
+
+		private static void StringReverse()
+		{
+			// List of string  
+			List<string> authors = new List<string>(5);
+			authors.Add("Mahesh Chand");
+			authors.Add("Chris Love");
+			authors.Add("Allen O'neill");
+			authors.Add("Naveen Sharma");
+			authors.Add("Mahesh Chand");
+			authors.Add("Monica Rathbun");
+			authors.Add("David McCarter");
+
+			Console.WriteLine("Original List items");
+			Console.WriteLine("===============");
+			// Print original order  
+			foreach (string a in authors)
+				Console.WriteLine(a);
+
+			List<List<string>> list = new List<List<string>>();
+			list.Add(authors);
+			list[0].Reverse();
+			Console.WriteLine("===============");
+			foreach (string a in list[0])
+				Console.WriteLine(a);
+
+			//// Reverse list items  
+			//authors.Reverse();
+
+			//Console.WriteLine();
+			//Console.WriteLine("Sorted List items");
+			//Console.WriteLine("===============");
+			//// Print reversed items  
+			//foreach (string a in authors)
+			//    Console.WriteLine(a);
+		}
+	}
 
     public class TestObject
     {

@@ -47,6 +47,8 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Test1.cs" />
+    <Compile Include="_2_AddTwoNumbers.cs" />
+    <Compile Include="_9_PalindromeNumber.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
